@@ -1,0 +1,158 @@
+/* Shared */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #efefef;
+  font-family: sans-serif;
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 3px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16),0 3px 15px 0 rgba(0,0,0,0.12)!important;
+  padding: 10px;
+}
+
+@media (min-width: 769px) {
+  .container {
+    margin: 2.5rem auto;
+  }
+}
+
+/* Result Component */
+.result {
+  padding: 1.5rem 2.5rem;
+}
+
+/* Quiz Component */
+.answerOptions {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* QuestionCount Component */
+.questionCount {
+  margin-top: 10px;
+}
+
+.countIndicator {
+  padding: 1.5rem 2.5rem 0;
+  font-size: 14px;
+  text-align: right;
+}
+
+.countBack {
+  margin-left: 30px;
+}
+
+/* Question Component */
+.question_container {
+  margin: 0;
+  padding: 0.5rem 2.5rem 1.5rem 2.5rem;
+  text-align: center;
+}
+
+/* AnswerOption Component */
+.answerOption {
+  border-top: 1px solid #eee;
+  display: inline-block;
+  margin: 20px;
+}
+
+.answerOption:hover {
+  background-color: #eefbfe;
+  display: inline-block;
+}
+
+.radioCustomButton {
+    display: none;
+}
+
+/* .radioCustomButton,
+.radioCustomLabel {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+} */
+
+.radioCustomLabel {
+  height: 50px;
+  position: relative;
+  width: 150px;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50),0 2px 10px 0 rgba(0,0,0,0.30)!important;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  color: #808080;
+  background: #fbfbfb; /* Old browsers */
+  background: -moz-linear-gradient(top, #fbfbfb 0%, #e7e7e7 50%, #e7e7e7 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fbfbfb 0%,#e7e7e7 50%,#e7e7e7 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fbfbfb 0%,#e7e7e7 50%,#e7e7e7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbfb', endColorstr='#e7e7e7',GradientType=0 ); /* IE6-9 */
+}
+
+/* .radioCustomButton ~ .radioCustomLabel:before {
+    position: absolute;
+    top: 20px;
+    left: 38px;
+    width: 28px;
+    height: 28px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background: #fff;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.radioCustomButton:checked ~ .radioCustomLabel:before {
+    content: '';
+    background: #8BC53F url(./svg/icon-check.svg) no-repeat;
+    background-size: 27px;
+    border-color: #8BC53F;
+} */
+
+/* Animation */
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out 0.3s;
+}
+
+.fade-leave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-appear {
+    opacity: 0;
+}
+
+.fade-appear.fade-appear-active {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
